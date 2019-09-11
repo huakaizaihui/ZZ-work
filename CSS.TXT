@@ -1,0 +1,17 @@
+<style type="text/css">
+ body{
+    width:100px;
+    height:80px;
+    font-size:12px;
+    font-weight:"微软雅黑";
+    align-text:center;
+ }
+ 
+ .{
+ 
+ }
+ 
+ #{
+ 
+ }
+</style>
