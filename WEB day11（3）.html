@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			#first{
+				width: 500px;
+				height: 500px;
+				border: 1px solid red;
+				background-color: rgb(152,65,85);                 
+			}
+			#two{
+				width:50%;
+				/*相对于父级的500px的一半*/
+				height:50%;
+				/*相对于父级的500px的一半*/
+				border:1px solid blue;
+				            /*实线条*/
+				background-color: rgb(50%,23%,80%);  				         
+			}
+			.three{
+				width: 300px;
+				height: 300px;
+				background-color: rgb(150,85,105);
+			}
+			.four{
+				width: 300px;
+				height: 300px;
+				background-color: rgba(150,85,105,0);
+			}
+			#five{
+				width: 300px;
+				height: 300px;
+				/*background-color: #0000FF;*/
+				/*蓝色*/
+				background-color: #00ff58;
+			}
+			#unique{
+				width: 500px;
+				height: 500px;
+				background-color: red;
+				display: block;
+			}			
+		</style>
+	</head>
+	<body>
+		<!--尺寸与边框
+		1.css单位
+		  1.尺寸单位
+		  % 百分比，相对于父级元素。
+		  相对单位，属性值会占据父层容器对应属性百分比
+		  给父级元素设置一个高和宽 具体的px
+		  子级 设置一个%-->
+		  <!--英寸：1in= 2.54cm
+		 厘米:  cm
+		 毫米：  mm
+		 pt:磅  字体大小设置  font-size:10pt;
+		 px:像素 计算机屏幕上的点 （最广泛 ）
+		 em: 字体大小 1em当前文字字体的尺寸 2em当前字体的尺寸的2倍 3em 3倍-->
+		 <!--0:设置内边距 外边距的时候 经常满足需求设置为0  0后面可以不加单位-->
+		 <!--2.颜色单位-->
+		       <!--1.英文单词  文本设置颜色  color:(red) 红色
+		       2.rgb() 三原色
+		         red green blue
+		         color:rgb(155,150,16);//随机写的  我也不是太清楚
+		                  范围： 0-255  
+		                  练习:设置背景颜色-->
+		         <!--background-color: rgb(0,0,0);黑色
+		         background-color: rgb(255,255,255); 白色-->
+		         <!--rgb(80%,50%,20%);//能不能调出颜色-->
+		         <!--3.rgba();-->
+		         <!--a:透明度 alpha 范围：0~1 0完全透明 1完全不透明-->
+		           <!--4.由六位数字加字母组成的一种颜色-->  
+		            <!--#(0000ff) 数字 10进制 8进制 2进制 （16进制）-->
+		            <!--每位数是有0-9 a-f 组成-->
+		            <!--#rrggbb的 代表着不同的数值-->
+		          <!--课外作业：查询一下什么是进制 至少把二进制和10进制的转换搞明白-->
+		          <!--010 -> 2  -->
+		          <!--尺寸的作用：
+		          设置宽和高
+		      什么时候可以设置宽和高-->
+		      <!--1.块元素可以设置宽和高
+		      div h1~h1 ul ol
+		      2.行内块   <input type="" name="" id="" value="" />
+		      3.行内元素不能设置宽和高
+		      span a width:500px  height:500px
+		      4.但是不代表这些永远都不能设置
+		      display：block（块元素）-->
+		      <span id="unique">
+		      	找不到我这个小标签了
+		      </span>
+		<div id="first">
+			<div id="two">
+				
+			</div>
+		</div>
+		<div class="three">
+			
+		</div>
+		<div class="four">
+			
+		</div>
+		<div id="five">
+			
+		</div>
+	</body>
+</html>
